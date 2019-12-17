@@ -38,7 +38,7 @@
       <HintPath>packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>packages\NHibernate.4.0.1.4000\lib\net40\NHibernate.dll</HintPath>
+      <HintPath>packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Entity\Data\Catalog.cs" />
     <Compile Include="Entity\Data\DataForecast.cs" />
+    <Compile Include="Entity\Data\DataNorm.cs" />
     <Compile Include="Entity\Data\DataSource.cs" />
     <Compile Include="Entity\Data\DataValue.cs" />
     <Compile Include="Entity\Data\ValueSource.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Hibernate\Database.cs" />
     <Compile Include="Mappings\Data\CatalogMap.cs" />
     <Compile Include="Mappings\Data\DataForecastMap.cs" />
+    <Compile Include="Mappings\Data\DataNormMap.cs" />
     <Compile Include="Mappings\Data\DataSourceMap.cs" />
     <Compile Include="Mappings\Data\DataValueMap.cs" />
     <Compile Include="Mappings\Data\ValueSourceMap.cs" />
