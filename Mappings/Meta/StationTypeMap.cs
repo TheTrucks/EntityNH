@@ -17,6 +17,7 @@ namespace EntityNH.Mappings.Meta
             Map(x => x.Name).Unique().Not.Nullable();
             Map(x => x.NameShort, "name_short").Unique().Not.Nullable();
             HasMany(x => x.Stations).KeyColumn("station_type_id").Inverse();
+            HasMany(x => x.Sites).KeyColumn("id").Inverse();
         }
 
     }

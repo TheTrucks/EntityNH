@@ -18,7 +18,7 @@ namespace EntityNH.Mappings.Meta
             References(x => x.Type, "site_type_id").UniqueKey("ux_site").Not.Nullable();
             Map(x => x.Description);
             Map(x => x.Code).UniqueKey("ux_site");
-            HasMany(x => x.Catalogs).Inverse().Cascade.All().KeyColumn("site_id");
+            HasMany(x => x.Catalogs).AsSet().Inverse().Cascade.All().KeyColumn("site_id");
             HasMany(x => x.AttrValues).KeyColumn("entity_id").Cascade.All().Inverse();
             HasMany(x => x.Parsers).Inverse().Cascade.All().KeyColumn("siteid");
             HasMany(x => x.EntityGroups).Inverse().Cascade.All().KeyColumn("entity_id");
