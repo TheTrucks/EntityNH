@@ -51,16 +51,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Data\Catalog.cs" />
+    <Compile Include="Entity\Data\Climate.cs" />
+    <Compile Include="Entity\Data\ClimateValue.cs" />
     <Compile Include="Entity\Data\DataForecast.cs" />
     <Compile Include="Entity\Data\DataNorm.cs" />
     <Compile Include="Entity\Data\DataSource.cs" />
     <Compile Include="Entity\Data\DataValue.cs" />
     <Compile Include="Entity\Data\ValueSource.cs" />
+    <Compile Include="Entity\Forecast\Location.cs" />
+    <Compile Include="Entity\Forecast\DataStore.cs" />
+    <Compile Include="Entity\Forecast\ForecastData.cs" />
     <Compile Include="Entity\Meta\CodeForm.cs" />
     <Compile Include="Entity\Meta\DataType.cs" />
     <Compile Include="Entity\Meta\EntityGroup.cs" />
     <Compile Include="Entity\Meta\EntityType.cs" />
     <Compile Include="Entity\Meta\FlagAQC.cs" />
+    <Compile Include="Entity\Meta\ForecastTemplate.cs" />
     <Compile Include="Entity\Meta\GeneralCategory.cs" />
     <Compile Include="Entity\Meta\GeoObject.cs" />
     <Compile Include="Entity\Meta\GeoType.cs" />
@@ -85,18 +91,26 @@
     <Compile Include="Entity\Parser\SysParsersParams.cs" />
     <Compile Include="Entity\Parser\SysParsersParamsSet.cs" />
     <Compile Include="Entity\Parser\SysParsersXSites.cs" />
+    <Compile Include="Entity\Social\Addr.cs" />
+    <Compile Include="Entity\Social\AddrType.cs" />
     <Compile Include="Hibernate\Database.cs" />
     <Compile Include="Mappings\Data\CatalogMap.cs" />
+    <Compile Include="Mappings\Data\ClimateMap.cs" />
+    <Compile Include="Mappings\Data\ClimateValueMap.cs" />
     <Compile Include="Mappings\Data\DataForecastMap.cs" />
     <Compile Include="Mappings\Data\DataNormMap.cs" />
     <Compile Include="Mappings\Data\DataSourceMap.cs" />
     <Compile Include="Mappings\Data\DataValueMap.cs" />
     <Compile Include="Mappings\Data\ValueSourceMap.cs" />
+    <Compile Include="Mappings\Forecast\DataStoreMap.cs" />
+    <Compile Include="Mappings\Forecast\ForecastDataMap.cs" />
+    <Compile Include="Mappings\Forecast\LocationMap.cs" />
     <Compile Include="Mappings\Meta\CodeFormMap.cs" />
     <Compile Include="Mappings\Meta\DataTypeMap.cs" />
     <Compile Include="Mappings\Meta\EntityGroupMap.cs" />
     <Compile Include="Mappings\Meta\EntityTypeMap.cs" />
     <Compile Include="Mappings\Meta\FlagAQCMap.cs" />
+    <Compile Include="Mappings\Meta\ForecastTemplateMap.cs" />
     <Compile Include="Mappings\Meta\GeneralCategoryMap.cs" />
     <Compile Include="Mappings\Meta\GeoObjectMap.cs" />
     <Compile Include="Mappings\Meta\GeoTypeMap.cs" />
@@ -121,6 +135,8 @@
     <Compile Include="Mappings\Parser\SysParsersParamsMap.cs" />
     <Compile Include="Mappings\Parser\SysParsersParamsSetMap.cs" />
     <Compile Include="Mappings\Parser\SysParsersXSitesMap.cs" />
+    <Compile Include="Mappings\Social\AddrMap.cs" />
+    <Compile Include="Mappings\Social\AddrTypeMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

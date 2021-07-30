@@ -27,9 +27,9 @@ namespace EntityNH.Entity.Meta
             unchecked
             {
                 int hash = GetType().GetHashCode();
-                hash = (hash * 7) ^ Entity.Id.GetHashCode();
-                hash = (hash * 7) ^ Type.Id.GetHashCode();
-                hash = (hash * 7) ^ DateS.GetHashCode();
+                hash += (hash * 7) ^ Entity.Id.GetHashCode();
+                hash += (hash * 7) ^ Type.Id.GetHashCode();
+                hash += (hash * 7) ^ DateS.GetHashCode();
 
                 return hash;
             }
