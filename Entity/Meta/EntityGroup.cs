@@ -12,6 +12,6 @@ namespace EntityNH.Entity.Meta
         public virtual int Id { get; set; }
         public virtual string Name { get; set; }
         public virtual EntityType Type { get;set; }
-        public virtual IList<GroupEntites> SiteLinks { get; set; }
+        public virtual IList<Site> SiteList { get; set; }
     }
 }

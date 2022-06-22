@@ -22,7 +22,7 @@ namespace EntityNH.Mappings.Data
             References(x => x.Method, "method_id").Not.Nullable().UniqueKey("uix_ctl");
             References(x => x.Source, "source_id").Not.Nullable().UniqueKey("uix_ctl");
             Map(x => x.Parent, "parent_id").Not.Nullable();
-            HasMany(x => x.DataValues).Inverse().Cascade.All();
+            HasMany(x => x.DataValues).Cascade.All();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace EntityNH.Mappings.Forecast
             Map(x => x.Date);
             Map(x => x.Depth);
             References(x => x.Location, "location_id");
-            HasMany(x => x.DataList).Inverse().Cascade.Delete();
+            HasMany(x => x.DataList).Cascade.Delete();
         }
     }
 }

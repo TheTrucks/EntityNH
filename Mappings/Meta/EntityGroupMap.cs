@@ -16,7 +16,11 @@ namespace EntityNH.Mappings.Meta
             Id(x => x.Id).GeneratedBy.Sequence("meta.entity_group_id_seq");
             Map(x => x.Name);
             References(x => x.Type, "entity_tab_name");
-            HasMany(x => x.SiteLinks).Inverse().Cascade.All().KeyColumn("entity_group_id");
+            HasManyToMany(x => x.SiteList)
+                .Table("meta.entity_group_entities")
+                .ParentKeyColumn("entity_group_id")
+                .ChildKeyColumn("entity_id")
+                .Cascade.All();
         }
     }
 }

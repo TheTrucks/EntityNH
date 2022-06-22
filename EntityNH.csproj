@@ -70,7 +70,6 @@
     <Compile Include="Entity\Meta\GeneralCategory.cs" />
     <Compile Include="Entity\Meta\GeoObject.cs" />
     <Compile Include="Entity\Meta\GeoType.cs" />
-    <Compile Include="Entity\Meta\GroupEntites.cs" />
     <Compile Include="Entity\Meta\Method.cs" />
     <Compile Include="Entity\Meta\Offset.cs" />
     <Compile Include="Entity\Meta\SampleMedium.cs" />
@@ -80,7 +79,6 @@
     <Compile Include="Entity\Meta\Source.cs" />
     <Compile Include="Entity\Meta\Station.cs" />
     <Compile Include="Entity\Meta\StationType.cs" />
-    <Compile Include="Entity\Meta\StationXGeoObj.cs" />
     <Compile Include="Entity\Meta\Unit.cs" />
     <Compile Include="Entity\Meta\ValueType.cs" />
     <Compile Include="Entity\Meta\VarCode.cs" />
@@ -114,7 +112,6 @@
     <Compile Include="Mappings\Meta\GeneralCategoryMap.cs" />
     <Compile Include="Mappings\Meta\GeoObjectMap.cs" />
     <Compile Include="Mappings\Meta\GeoTypeMap.cs" />
-    <Compile Include="Mappings\Meta\GroupEntitiesMap.cs" />
     <Compile Include="Mappings\Meta\MethodMap.cs" />
     <Compile Include="Mappings\Meta\OffsetMap.cs" />
     <Compile Include="Mappings\Meta\SampleMediumMap.cs" />
@@ -124,7 +121,6 @@
     <Compile Include="Mappings\Meta\SourceMap.cs" />
     <Compile Include="Mappings\Meta\StationMap.cs" />
     <Compile Include="Mappings\Meta\StationTypeMap.cs" />
-    <Compile Include="Mappings\Meta\StationXGeoObjMap.cs" />
     <Compile Include="Mappings\Meta\UnitMap.cs" />
     <Compile Include="Mappings\Meta\ValueTypeMap.cs" />
     <Compile Include="Mappings\Meta\VarCodeMap.cs" />

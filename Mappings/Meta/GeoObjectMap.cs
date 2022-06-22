@@ -18,8 +18,12 @@ namespace EntityNH.Mappings.Meta
             Map(x => x.Name);
             References(x => x.FallInto, "fall_into_id");
             Map(x => x.Order, "\"order\"");
-            HasMany(x => x.StationLink).Inverse().Cascade.All().KeyColumn("geo_object_id");
-        }
 
+            HasManyToMany(x => x.Stations)
+                .Table("meta.station_x_geoobject")
+                .ParentKeyColumn("geo_object_id")
+                .ChildKeyColumn("station_id")
+                .Cascade.All();
+        }
     }
 }

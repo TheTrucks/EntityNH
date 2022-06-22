@@ -13,6 +13,6 @@ namespace EntityNH.Entity.Meta
         public virtual string Name { get; set; }
         public virtual GeoObject FallInto { get; set; }
         public virtual int? Order { get; set; }
-        public virtual IList<StationXGeoObj> StationLink { get; set; }
+        public virtual IList<Station> Stations { get; set; }
     }
 }

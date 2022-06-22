@@ -21,8 +21,14 @@ namespace EntityNH.Mappings
             Map(x => x.NameEngShort, "name_short_eng");
             Map(x => x.AddrRegion, "addr_region_id");
             Map(x => x.Org, "org_id");
-            HasMany(x => x.Sites).Inverse().Cascade.All();
-            HasMany(x => x.GeoObjLink).Inverse().Cascade.All().KeyColumn("station_id");
+            HasMany(x => x.Sites).Cascade.All();
+
+            HasManyToMany(x => x.GeoObjects)
+                .Table("meta.station_x_geoobject")
+                .ParentKeyColumn("station_id")
+                .ChildKeyColumn("geo_object_id")
+                .Inverse()
+                .Cascade.All();
         }
     }
 }

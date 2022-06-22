@@ -17,6 +17,7 @@ namespace EntityNH.Entity.Meta
         public virtual int? AddrRegion { get; set; }
         public virtual int? Org { get; set; }
         public virtual IList<Site> Sites { get; set; }
-        public virtual IList<StationXGeoObj> GeoObjLink { get; set; }
+
+        public virtual ISet<GeoObject> GeoObjects { get; set; }
     }
 }

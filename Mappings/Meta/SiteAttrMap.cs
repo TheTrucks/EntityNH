@@ -16,7 +16,7 @@ namespace EntityNH.Mappings.Meta
             Id(x => x.Id);
             Map(x => x.Name).Not.Nullable();
             Map(x => x.SiteTypeIDMandatory, "site_type_id_mandatory");
-            HasMany(x => x.Values).Inverse();
+            HasMany(x => x.Values);
         }
     }
 }

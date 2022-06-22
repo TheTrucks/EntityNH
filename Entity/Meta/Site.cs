@@ -18,6 +18,6 @@ namespace EntityNH.Entity.Meta
         public virtual ISet<Catalog> Catalogs { get; set; }
         public virtual IList<SiteAttrValue> AttrValues { get; set; }
         public virtual IList<SysParsersXSites> Parsers { get; set; }
-        public virtual IList<GroupEntites> EntityGroups { get; set; }
+        public virtual ISet<EntityGroup> EntityGroups { get; set; }
     }
 }
